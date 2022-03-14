@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: kbarbry <kbarbry@student.42lyon.fr>        +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/03/11 17:56:29 by kbarbry           #+#    #+#              #
-#    Updated: 2022/03/11 17:56:41 by kbarbry          ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 BBLU 		=	\033[1;34m
 BGREEN		=	\033[1;32m
 BRED		=	\033[1;31m
@@ -19,9 +7,11 @@ RED 		=	\033[0;31m
 RST 		=	\033[0m
 
 SRC			=	main.cpp		\
-				Bureaucrat.cpp
+				Bureaucrat.cpp	\
+				Form.cpp
 
-HEAD		=	Bureaucrat.hpp
+HEAD		=	Bureaucrat.hpp	\
+				Form.hpp
 
 OBJ			=   ${addprefix src/, ${SRC:.cpp=.o}}
 
